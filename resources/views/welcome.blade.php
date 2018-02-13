@@ -4,7 +4,6 @@
 @section('content')
     <h1> Blog</h1>
 
-    <h2>{{ $post}}</h2>
 
     {{ $name }}
 

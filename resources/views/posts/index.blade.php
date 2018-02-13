@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base', ['title' => 'index'] )
 
 @section('content')
   <table class="table">
@@ -7,29 +7,16 @@
         <th scope="col">#</th>
         <th scope="col">date</th>
         <th scope="col">titre</th>
-
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">{{$post->id}}</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
-
+        @foreach ($posts as $post)
+          <th scope="row">{{$post->id}}</th>
+          <td>{{ $post->date}}</td>
+          <td>{{ $post->title}}</td>
+        @endforeach
+        </tr>
+      </tbody>
+    </table>
 @endsection

@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->date('date');
             $table->string('title');
             $table->text('desc');
-            $table->text('difficulties');
+            $table->text('dificulties');
             $table->text('acquired');
             $table->dateTime('codingTime');
             $table->timestamps();

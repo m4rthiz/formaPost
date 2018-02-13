@@ -12,7 +12,7 @@
 */
 
 use Illuminate\Support\Facades\Route;
-use App\Post;
+use App\Http\Controllers\PostsController;
 
 
 Route::get('/', function () {
