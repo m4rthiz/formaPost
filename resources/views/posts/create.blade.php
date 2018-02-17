@@ -4,10 +4,26 @@
 
   <h1>ajouter un post</h1>
 
+  @if($errors->any())
+    <div class="alert alert-danger">
+      @foreach ($errors->all() as $error)
+        <p>{{ $error }}</p>
+      @endforeach
+    </div>
+  @endif
+
+@if (Session::has('flash_message'))
+  <div class="alert alert-success">
+    {{ Session::get('flash_message') }}
+  </div>
+
+@endif
+
   {!! Form::open([
     'route' => 'posts.store'
     ])!!}
 
+    
     <div class="form-group">
       {!! Form::label('title', 'Titre:', ['class' => 'control-label']) !!}
       {!! Form::text('title', null, ['class' => 'form-control']) !!}

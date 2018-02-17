@@ -12,7 +12,9 @@
     <tbody>
       <tr>
         @foreach ($posts as $post)
-          <th scope="row">{{$post->id}}</th>
+          <th> <a href="{{ route('posts.show', $post->id) }}">{{ $post->id }}</a></th>
+          <td> <a href="{{ route('posts.edit', $post->id) }}">editer</a>        </td>
+
           <td>{{ $post->date}}</td>
           <td>{{ $post->title}}</td>
         @endforeach
