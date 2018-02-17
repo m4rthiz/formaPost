@@ -5,5 +5,17 @@
 // Variables
 @import "variables";
 
+//components
+@import "./components/content.scss";
+
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+//base
+
+body{
+  background-color: $body-bg;
+  h1{
+    color: red;
+  }
+}
