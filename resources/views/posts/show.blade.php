@@ -1,3 +1,4 @@
+
 @extends('layouts.base', ['title' => 'create'] )
 
 @section('content')
@@ -12,7 +13,12 @@
   <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editer</a>
 
   <div class="pull-right">
-    <a href="#" class="btn btn-danger">Effacer</a>
+    {!! Form::open([
+              'method' => 'DELETE',
+              'route' => ['posts.destroy', $post->id]
+          ]) !!}
+              {!! Form::submit('Effacer ce post', ['class' => 'btn btn-danger']) !!}
+          {!! Form::close() !!}
   </div>
 
 

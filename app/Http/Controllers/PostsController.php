@@ -123,6 +123,12 @@ public function update(Request $request, $id)
 */
 public function destroy($id)
 {
-  //
+  $post = Post::FindOrFail($id);
+
+  $post->delete();
+
+  Session::flash('flash_message', 'Post effacé !');
+
+  return redirect()->route('posts.index');
 }
 }
