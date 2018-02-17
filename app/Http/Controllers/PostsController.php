@@ -38,7 +38,10 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $input = $request->all();
+      Post::create($input);
+      return redirect()->back();
+
     }
 
     /**

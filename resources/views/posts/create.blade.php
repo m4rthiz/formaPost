@@ -19,8 +19,8 @@
     </div>
 
     <div class="form-group">
-      {!! Form::label('description', 'Description:', ['class' => 'control-label']) !!}
-      {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
+      {!! Form::label('desc', 'Description:', ['class' => 'control-label']) !!}
+      {!! Form::textarea('desc', null, ['class' => 'form-control']) !!}
     </div>
 
     <div class="form-group">
@@ -31,6 +31,11 @@
     <div class="form-group">
       {!! Form::label('acquired', 'Acquis:', ['class' => 'control-label']) !!}
       {!! Form::textarea('acquired', null, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="form-group">
+      {!! Form::label('codingTime', 'Temps de code:', ['class' => 'control-label']) !!}
+      {!! Form::time('codingTime', null, ['class' => 'form-control']) !!}
     </div>
 
     {!! Form::submit('enregistrer', ['class' => 'btn btn-primary']) !!}

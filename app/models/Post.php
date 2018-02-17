@@ -8,7 +8,7 @@ class Post extends Model{
 
   public $timestamps = false;
 
-  public $fillable = ['title', 'description'];
+  protected $fillable = ['title', 'desc', 'date', 'dificulties', 'acquired', 'codingTime'];
 
 
 

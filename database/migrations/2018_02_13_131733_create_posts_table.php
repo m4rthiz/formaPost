@@ -20,7 +20,7 @@ class CreatePostsTable extends Migration
             $table->text('desc');
             $table->text('dificulties');
             $table->text('acquired');
-            $table->dateTime('codingTime');
+            $table->time('codingTime');
             $table->timestamps();
         });
     }
