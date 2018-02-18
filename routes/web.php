@@ -17,10 +17,13 @@ use App\Http\Controllers\PostsController;
 
 Route::get('/', function () {
 
-      $name = 'marie thizy';
+      $name = 'm4r';
+      $date = date('D-j-F-Y');
+      $hour = date('G:i:s');
+      $isWeekEnd = date('N') >= 5;
 
 
-    return view('welcome', compact('name'));
+    return view('welcome', compact('name', 'date', 'hour', 'isWeekEnd'));
 });
 
 Route::resource('posts', 'PostsController');

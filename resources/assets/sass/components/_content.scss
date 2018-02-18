@@ -1,0 +1,18 @@
+.content{
+  background-color: $content-bg;
+  padding: 30px;
+  .todo{
+    margin: 30px;
+    border: 2px solid $blue;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: $link;
+    &:hover{
+      color: $text-color;
+    }
+  }
+
+
+}

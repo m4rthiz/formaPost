@@ -6,11 +6,12 @@
 <body>
   <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       @include('includes.navbar')
     </nav>
-
-    @yield('content')
+    <div class="content">
+      @yield('content')
+    </div>
 
 
     <footer>

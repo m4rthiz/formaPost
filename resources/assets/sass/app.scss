@@ -7,15 +7,12 @@
 
 //components
 @import "./components/content.scss";
+@import "./components/base.scss";
+@import "./components/navbar.scss";
+
 
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+ @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
 
 //base
-
-body{
-  background-color: $body-bg;
-  h1{
-    color: red;
-  }
-}
