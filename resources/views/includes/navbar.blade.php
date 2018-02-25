@@ -13,10 +13,10 @@
           <a class="nav-link" href="{{ URL::to('posts/create') }}">nouveau Post</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('posts') }}">Dictionaire <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ URL::to('dictionaries') }}">Dictionaire <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('posts/create') }}">nouveau mot</a>
+          <a class="nav-link" href="{{ URL::to('dictionaries/create') }}">nouveau mot</a>
         </li>
       </ul>
       {{-- <form class="form-inline my-2 my-lg-0">
