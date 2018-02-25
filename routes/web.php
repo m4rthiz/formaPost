@@ -14,16 +14,16 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
 
-
 Route::get('/', function () {
-
-      $name = 'm4r';
-      $date = date('D-j-F-Y');
-      $hour = date('G:i:s');
-      $isWeekEnd = date('N') >= 5;
+    $name = 'm4r';
+    $date = date('D-j-F-Y');
+    $hour = date('G:i:s');
+    $isWeekEnd = date('N') >= 5;
 
 
     return view('welcome', compact('name', 'date', 'hour', 'isWeekEnd'));
 });
 
 Route::resource('posts', 'PostsController');
+
+Route::resource('dictionaries', 'DictionaryController');
