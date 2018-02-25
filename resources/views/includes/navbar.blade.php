@@ -5,12 +5,18 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav navbar-right">
         <li class="nav-item active">
           <a class="nav-link" href="{{ URL::to('posts') }}">historique des posts <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('posts/create') }}">nouveau</a>
+          <a class="nav-link" href="{{ URL::to('posts/create') }}">nouveau Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ URL::to('posts') }}">Dictionaire <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ URL::to('posts/create') }}">nouveau mot</a>
         </li>
       </ul>
       {{-- <form class="form-inline my-2 my-lg-0">
