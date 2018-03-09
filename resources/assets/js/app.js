@@ -17,10 +17,11 @@ window.Vue = require('vue');
 
 // Vue.component("clock-component", require("./components/clockComponent"));
 
+
 let clock = new Vue({
     el: '#clock',
     data: {
-        time: '',
+        time: "",
         date: ''
     }
 });

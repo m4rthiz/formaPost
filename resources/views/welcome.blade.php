@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row justify-content-center">
-        <h1 col-4> Welcome {{ $name }}</h2>
+        <h1 col-4> Welcome {{ $name }}</h1>
     </div>
     <div class="row justify-content-center">
         <div class="col-4 todo">
@@ -14,8 +14,9 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" >
         <div id="clock">
+            {{--<clock-component></clock-component>--}}
             <p class="date">@{{ date }}</p>
             <p class="time">@{{ time }}</p>
         </div>
