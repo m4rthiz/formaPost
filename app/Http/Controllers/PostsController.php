@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
-use Session;
-
+use App\models\Post;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
