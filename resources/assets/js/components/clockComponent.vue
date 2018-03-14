@@ -1,21 +1,14 @@
-
 <template>
-
-        <!--<p class="date">@{{ date }}</p>-->
-        <p class="time">@{{ time }}</p>
-
+    <div id="clock">
+        <p class="date">{{ date }}</p>
+        <p class="time">{{ time }}</p>
+    </div>
 </template>
 
 <script>
-      export default {
+    export default {
         mounted() {
             console.log('Component mounted.')
-
-
         }
-
-
     }
-
-
 </script>

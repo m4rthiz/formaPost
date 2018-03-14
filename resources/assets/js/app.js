@@ -15,18 +15,18 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// Vue.component("clock-component", require("./components/clockComponent"));
-
+// Vue.component('clock-component', require('./components/clockComponent'));
 
 let clock = new Vue({
     el: '#clock',
     data: {
         time: "",
-        date: ''
+        date: ""
     }
 });
 
-let week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FR', 'SAT'];
+
+let week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 let timerID = setInterval(updateTime, 1000);
 updateTime();
 function updateTime() {

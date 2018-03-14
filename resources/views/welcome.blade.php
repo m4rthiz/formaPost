@@ -14,18 +14,12 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center" >
-        <div id="clock">
-            {{--<clock-component></clock-component>--}}
-            <p class="date">@{{ date }}</p>
-            <p class="time">@{{ time }}</p>
-        </div>
-
+    <div class="row justify-content-center" id="clock">
         <div class="col-6">
-            <h2>{{ $date }}</h2>
+            <h2 class="date">@{{ date }}</h2>
         </div>
         <div class="col-6">
-            <h2>{{ $hour }}</h2>
+            <h2 class="time">@{{ time }}</h2>
         </div>
 
     </div>

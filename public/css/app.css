@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
 .content {
-  background-color: #51565b;
+  background-color: #2d2f34;
   padding: 30px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: #3a3e3f;
+  background-color: #1d2122;
   color: #e3e3e3;
 }
 
@@ -31,36 +31,6 @@ body {
 
 .navbar li {
   margin-left: 15px;
-}
-
-#clock {
-  font-family: 'Share Tech Mono', monospace;
-  color: #ffffff;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #daf6ff;
-  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
-}
-
-#clock .time {
-  letter-spacing: 0.05em;
-  font-size: 80px;
-  padding: 5px 0;
-}
-
-#clock .date {
-  letter-spacing: 0.1em;
-  font-size: 24px;
-}
-
-#clock .text {
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  padding: 20px 0 0;
 }
 
 /*!
@@ -1469,7 +1439,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #e3e3e3;
-  background-color: #3a3e3f;
+  background-color: #1d2122;
 }
 
 input,
@@ -1518,7 +1488,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: #3a3e3f;
+  background-color: #1d2122;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3117,7 +3087,7 @@ th {
 }
 
 .table .table {
-  background-color: #3a3e3f;
+  background-color: #1d2122;
 }
 
 .table-condensed > thead > tr > th,
@@ -5208,7 +5178,7 @@ tbody.collapse.in {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #3a3e3f;
+  background-color: #1d2122;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -5309,7 +5279,7 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #3a3e3f;
+    border-bottom-color: #1d2122;
   }
 }
 
@@ -6377,7 +6347,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 22px;
   line-height: 1.6;
-  background-color: #3a3e3f;
+  background-color: #1d2122;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
