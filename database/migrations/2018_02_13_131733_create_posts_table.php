@@ -23,14 +23,7 @@ class CreatePostsTable extends Migration
             $table->time('codingTime');
             $table->timestamps();
         });
-        Schema::create('dictionary_post', function (Blueprint $table){
-            $table->increments('id');
-            $table->integer('dictionary_id');
-            $table->integer('post_id');
-            $table->foreign('dictionary_id')->references('id')->on('dictionary')->onDelete('cascade');
-            $table->foreign('post_id')->references('id')->on('post')->onDelete('cascade');
 
-        });
     }
 
     /**
