@@ -3,10 +3,16 @@
 namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
-use Mpociot\Firebase\SyncsWithFirebase;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Dictionary extends Model
 {
-    use SyncsWithFirebase;
+//    use SoftDeletes;
+
     protected $fillable = ['word', 'definition', 'category'];
+
+    public function posts()
+    {
+        return $this->belongsToMany('App\models\Post');
+    }
 }
